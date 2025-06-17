@@ -12,11 +12,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import com.morgana.ide.ui.EditorScreen
+import com.morgana.ide.ui.IDELayout
 
 fun main() = application {
     Window(onCloseRequest = ::exitApplication, title = "Morgana IDE") {
         MaterialTheme {
-            EditorScreen()
+            IDELayout()
         }
     }
 }
