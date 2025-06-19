@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.morgana.ide.controller.FileExplorerController"
+      styleClass="file-explorer">
+
+    <padding>
+        <Insets top="5.0" right="5.0" bottom="5.0" left="5.0" />
+    </padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="5.0">
+        <Label text="Files" styleClass="section-title" />
+        <Region HBox.hgrow="ALWAYS" />
+        <Button text="⟳" onAction="#refreshProject" styleClass="icon-button" />
+        <Button text="+" onAction="#createNewFolder" styleClass="icon-button" />
+    </HBox>
+
+    <TextField fx:id="searchField" promptText="Search files..." />
+
+    <TreeView fx:id="projectTreeView" VBox.vgrow="ALWAYS" showRoot="false" />
+
+</VBox>
