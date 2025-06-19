@@ -16,8 +16,8 @@
 
             <Label fx:id="lineNumberLabel" text="Line: 1" styleClass="line-info" />
             <Region HBox.hgrow="ALWAYS" />
-            <Button text="Format" onAction="#formatCode" />
-            <Button text="Find" onAction="#showFindDialog" />
+            <Button text="Format" />
+            <Button text="Find" />
         </HBox>
     </top>
 

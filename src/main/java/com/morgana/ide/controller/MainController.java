@@ -1,5 +1,6 @@
 package com.morgana.ide.controller;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -25,7 +26,7 @@ public class MainController {
     public void initialize(Stage stage) {
         this.primaryStage = stage;
         setupFileTree();
-        setupMenus();
+//        setupMenus();
         setupToolbar();
         setupStatusBar();
     }
@@ -61,40 +62,34 @@ public class MainController {
         );
     }
 
-    private void setupMenus() {
-        Menu fileMenu = new Menu("File");
-        MenuItem newItem = new MenuItem("New");
-        MenuItem openItem = new MenuItem("Open");
-        MenuItem saveItem = new MenuItem("Save");
-        MenuItem exitItem = new MenuItem("Exit");
-
-        newItem.setOnAction(e -> createNewFile());
-        openItem.setOnAction(e -> openFile());
-        saveItem.setOnAction(e -> saveCurrentFile());
-        exitItem.setOnAction(e -> primaryStage.close());
-
-        fileMenu.getItems().addAll(newItem, openItem, saveItem, new SeparatorMenuItem(), exitItem);
-
-        Menu editMenu = new Menu("Edit");
-        MenuItem undoItem = new MenuItem("Undo");
-        MenuItem redoItem = new MenuItem("Redo");
-        editMenu.getItems().addAll(undoItem, redoItem);
-
-        menuBar.getMenus().addAll(fileMenu, editMenu);
-    }
+//    private void setupMenus() {
+//        Menu fileMenu = new Menu("File");
+//        MenuItem newItem = new MenuItem("New");
+//        MenuItem openItem = new MenuItem("Open");
+//        MenuItem saveItem = new MenuItem("Save");
+//        MenuItem exitItem = new MenuItem("Exit");
+//
+//        newItem.setOnAction(e -> createNewFile());
+//        openItem.setOnAction(e -> openFile());
+//        saveItem.setOnAction(e -> saveCurrentFile());
+//        exitItem.setOnAction(e -> primaryStage.close());
+//
+//        fileMenu.getItems().addAll(newItem, openItem, saveItem, new SeparatorMenuItem(), exitItem);
+//
+//        Menu editMenu = new Menu("Edit");
+//        MenuItem undoItem = new MenuItem("Undo");
+//        MenuItem redoItem = new MenuItem("Redo");
+//        editMenu.getItems().addAll(undoItem, redoItem);
+//
+//        menuBar.getMenus().addAll(fileMenu, editMenu);
+//    }
 
     private void setupToolbar() {
-        Button newBtn = new Button("New");
-        Button openBtn = new Button("Open");
-        Button saveBtn = new Button("Save");
-        Button runBtn = new Button("Run");
+        JFXButton fileBtn = new JFXButton("File");
 
-        newBtn.setOnAction(e -> createNewFile());
-        openBtn.setOnAction(e -> openFile());
-        saveBtn.setOnAction(e -> saveCurrentFile());
-        runBtn.setOnAction(e -> runCurrentFile());
+        fileBtn.setOnAction(e -> openFile());
 
-        toolBar.getItems().addAll(newBtn, openBtn, saveBtn, new Separator(), runBtn);
+        toolBar.getItems().addAll(fileBtn);
     }
 
     private void setupStatusBar() {

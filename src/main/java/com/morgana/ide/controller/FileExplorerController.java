@@ -8,8 +8,9 @@ import javafx.scene.control.TreeView;
 public class FileExplorerController {
     @FXML
     private TreeView<String> projectTreeView;
-    @FXML private
-    TextField searchField;
+
+    @FXML
+    private TextField searchField;
 
     @FXML
     private void initialize() {

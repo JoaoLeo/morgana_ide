@@ -8,6 +8,7 @@ module morgana.ide {
     requires com.fasterxml.jackson.databind;
     requires java.desktop;
     requires java.logging;
+    requires com.jfoenix;
 
     // Exports for FXML reflection
     exports com.morgana.ide;

@@ -124,20 +124,23 @@
     -fx-font-size: 12px;
 }
 
-/* MenuBar styling */
-.menu-bar {
-    -fx-background-color: #3c3f41;
-    -fx-border-color: #555555;
-    -fx-border-width: 0 0 1 0;
-}
+/*!* MenuBar styling *!*/
+/*.menu-bar {*/
+/*    -fx-background-color: #3c3f41;*/
+/*}*/
 
-.menu-bar .menu {
-    -fx-text-fill: #bbbbbb;
-}
+/*.menu-bar .menu {*/
+/*    -fx-padding: 0.7em 0.57em;*/
+/*    -fx-font-size: 14px;*/
+/*    -jfx-button-type: RAISED;*/
+/*    -fx-background-color: #c4cbd3;*/
+/*    -fx-pref-width: 200;*/
+/*    -fx-text-fill: #000000;*/
+/*}*/
 
-.menu-bar .menu:hover {
-    -fx-background-color: #4e5254;
-}
+/*.menu-bar .menu:hover {*/
+/*    -fx-background-color: WHITE;*/
+/*}*/
 
 /* ToolBar styling */
 .tool-bar {
