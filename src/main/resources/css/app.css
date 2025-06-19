@@ -1,0 +1,224 @@
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #bbbbbb;
+}
+
+/* Sidebar styling */
+.sidebar {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 0 0;
+}
+
+.sidebar-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 5 0 10 0;
+}
+
+/* File explorer styling */
+.file-explorer {
+    -fx-background-color: #3c3f41;
+}
+
+.section-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #bbbbbb;
+    -fx-border-color: transparent;
+    -fx-padding: 2 6 2 6;
+}
+
+.icon-button:hover {
+    -fx-background-color: #4e5254;
+}
+
+/* TreeView styling */
+.tree-view {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: transparent;
+}
+
+.tree-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #bbbbbb;
+    -fx-padding: 2 3 2 3;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #214283;
+    -fx-text-fill: #ffffff;
+}
+
+.tree-cell:hover {
+    -fx-background-color: #4e5254;
+}
+
+/* TabPane styling */
+.tab-pane {
+    -fx-background-color: #2b2b2b;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.tab {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 8 12 8 12;
+}
+
+.tab:selected {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #bbbbbb;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #ffffff;
+}
+
+/* Code editor styling */
+.code-editor {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #a9b7c6;
+    -fx-font-family: "JetBrains Mono", "Fira Code", "Consolas", monospace;
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 10px;
+}
+
+.code-editor:focused {
+    -fx-border-color: #214283;
+    -fx-border-width: 1px;
+}
+
+.code-editor .content {
+    -fx-background-color: #2b2b2b;
+}
+
+/* Editor toolbar */
+.editor-toolbar {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.line-info {
+    -fx-text-fill: #999999;
+    -fx-font-size: 12px;
+}
+
+/* MenuBar styling */
+.menu-bar {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+}
+
+.menu-bar .menu {
+    -fx-text-fill: #bbbbbb;
+}
+
+.menu-bar .menu:hover {
+    -fx-background-color: #4e5254;
+}
+
+/* ToolBar styling */
+.tool-bar {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 5px;
+}
+
+.tool-bar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #bbbbbb;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-padding: 5 10 5 10;
+}
+
+.tool-bar .button:hover {
+    -fx-background-color: #4e5254;
+}
+
+.tool-bar .button:pressed {
+    -fx-background-color: #214283;
+}
+
+/* Status bar styling */
+.status-bar {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 1 0 0 0;
+}
+
+.version-label {
+    -fx-text-fill: #999999;
+    -fx-font-size: 11px;
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #45494a;
+    -fx-text-fill: #bbbbbb;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-background-radius: 3px;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #214283;
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: #3c3f41;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #555555;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #666666;
+}
+
+/* Context menu styling */
+.context-menu {
+    -fx-background-color: #3c3f41;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+}
+
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-text-fill: #bbbbbb;
+    -fx-padding: 5 10 5 10;
+}
+
+.menu-item:hover {
+    -fx-background-color: #4e5254;
+}

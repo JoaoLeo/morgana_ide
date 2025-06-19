@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.morgana.ide.controller.EditorController">
+
+    <top>
+        <HBox styleClass="editor-toolbar" alignment="CENTER_LEFT" spacing="5.0">
+            <padding>
+                <Insets top="3.0" right="5.0" bottom="3.0" left="5.0" />
+            </padding>
+
+            <Label fx:id="lineNumberLabel" text="Line: 1" styleClass="line-info" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button text="Format" onAction="#formatCode" />
+            <Button text="Find" onAction="#showFindDialog" />
+        </HBox>
+    </top>
+
+    <center>
+        <TextArea fx:id="codeTextArea" wrapText="false" styleClass="code-editor" />
+    </center>
+
+</BorderPane>
